@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Academic homepage of Dekai Li — hyperspectral remote sensing, multimodal learning, Mamba/SSM, and deep learning." />
+  <meta name="description" content="Academic homepage of Dekai Li." />
   <title>Dekai Li | Academic Homepage</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,12 +14,9 @@
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <nav class="nav">
       <a href="#biography">Biography</a>
-      <a href="#education">Education</a>
-      <a href="#research">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#patents">Patents</a>
       <a href="#service">Service</a>
-      <a href="#contact">Contact</a>
+      <a href="cv.html">CV</a>
     </nav>
   </div>
 </header>
@@ -31,9 +28,9 @@
       <img class="portrait" src="assets/profile.png" alt="Portrait of Dekai Li" />
     </div>
     <div class="hero-copy">
-      <p class="eyebrow">Remote Sensing · Artificial Intelligence</p>
+      <p class="eyebrow">REMOTE SENSING · ARTIFICIAL INTELLIGENCE</p>
       <h1>Dekai Li <span>李德凯</span></h1>
-      <p class="affiliation">Department of Artificial Intelligence · School of Information and Communication Engineering · Hainan University</p>
+      <p class="affiliation">School of Information and Communication Engineering · Hainan University</p>
       <p class="summary">
         Research on hyperspectral image analysis, spectral–spatial representation learning,
         Mamba/state-space models, multimodal HSI–LiDAR fusion, and fine-grained Earth observation.
@@ -47,7 +44,6 @@
       </div>
       <div class="quick">
         <a href="mailto:lidekai@hainanu.edu.cn">lidekai@hainanu.edu.cn</a>
-        <span>Haikou, China</span>
       </div>
     </div>
   </div>
@@ -57,190 +53,114 @@
   <div class="container narrow">
     <div class="section-title"><span>01</span><h2>Biography</h2></div>
     <p class="lead">
-      Dekai Li is affiliated with the Department of Artificial Intelligence, School of Information and Communication Engineering,
-      Hainan University. His research focuses on intelligent interpretation of hyperspectral and multimodal remote-sensing data.
-      Recent work explores efficient spectral–spatial modeling with Mamba/state-space models, attention and Transformer architectures,
-      multimodal HSI–LiDAR fusion, contrastive learning, and limited-sample fine-grained classification. His research also covers
-      coastal and mangrove remote sensing, where spectral information from hyperspectral imagery is combined with structural cues
-      from LiDAR for robust Earth-observation applications.
+      Dekai Li is affiliated with the School of Information and Communication Engineering, Hainan University.
+      His research focuses on hyperspectral remote sensing, spectral–spatial representation learning,
+      Mamba/state-space models, multimodal HSI–LiDAR fusion, contrastive learning, and limited-sample
+      fine-grained classification, with applications to coastal and mangrove remote sensing.
     </p>
   </div>
 </section>
 
-<section id="education" class="section soft">
-  <div class="container">
-    <div class="section-title"><span>02</span><h2>Education & Affiliation</h2></div>
-    <div class="education-grid">
-      <article class="education-card confirmed">
-        <div class="status">Current affiliation</div>
-        <h3>Hainan University</h3>
-        <p>Department of Artificial Intelligence</p>
-        <p>School of Information and Communication Engineering</p>
-        <p>Haikou 570228, Hainan, China</p>
-      </article>
-      <article class="education-card pending">
-        <div class="status">To complete</div>
-        <h3>Degree history</h3>
-        <p>Your Bachelor's / Master's / PhD degree information has not yet been provided, so this first public version does not guess or invent it.</p>
-        <p class="small">Once supplied, this card can be replaced with a chronological education timeline.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="research" class="section">
-  <div class="container">
-    <div class="section-title"><span>03</span><h2>Research Interests</h2></div>
-    <div class="interest-grid">
-      <article><b>HSI</b><h3>Hyperspectral Remote Sensing</h3><p>Classification, spectral–spatial representation learning, high-dimensional feature analysis.</p></article>
-      <article><b>SSM</b><h3>Mamba & State-Space Models</h3><p>Linear-complexity sequence modeling for spectral dependencies and spatial–spectral fusion.</p></article>
-      <article><b>H+L</b><h3>HSI–LiDAR Multimodal Fusion</h3><p>Cross-modal alignment, adaptive fusion, structural and biochemical feature complementarity.</p></article>
-      <article><b>EO</b><h3>Earth Observation AI</h3><p>Attention, Transformer, CNN, contrastive learning, limited-sample and fine-grained classification.</p></article>
-    </div>
-  </div>
-</section>
-
-<section id="publications" class="section soft">
-  <div class="container">
+<section id="publications" class="section alt">
+  <div class="container narrow">
     <div class="section-title split">
-      <div><span>04</span><h2>Selected Publications</h2></div>
+      <div><span>02</span><h2>Selected Publications</h2></div>
       <a class="inline-link" href="https://scholar.google.com/citations?hl=zh-CN&amp;user=58hSyu0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">Full publication list →</a>
     </div>
 
-    <div class="publication-grid">
+    <div class="publication-list">
       <article class="publication featured">
-        <img src="assets/thumbnails/facanet.jpg" alt="FACANet architecture thumbnail" />
-        <div class="pub-content">
-          <div class="meta">2026 · Expert Systems With Applications · Journal Pre-proof</div>
-          <h3>FACANet: Fourier Aware Contrastive Alignment Network for Fine-Grained Mangrove Classification with Limited Samples</h3>
-          <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Jiaxin Li, Songpeng Gong</p>
-          <p>HSI–LiDAR multimodal fusion with Fourier-domain modulation, adaptive cross-modal integration, and supervised modal contrastive alignment for fine-grained mangrove classification.</p>
-          <div class="pub-actions"><a href="https://doi.org/10.1016/j.eswa.2026.134187" target="_blank" rel="noreferrer">DOI</a><a href="https://github.com/dekai-li/FACANet" target="_blank" rel="noreferrer">Code</a></div>
+        <div class="pub-meta-row">
+          <span class="pub-year">2026</span>
+          <span class="badge gold">Highly Cited Paper</span>
+          <span class="pub-venue">IEEE Transactions on Geoscience and Remote Sensing</span>
+        </div>
+        <h3>HyPyraMamba: A Pyramid Spectral Attention and Mamba-Based Architecture for Robust Hyperspectral Image Classification</h3>
+        <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Mengxing Huang, Lorenzo Bruzzone, Jiaxin Li</p>
+        <p class="pub-desc">Pyramid spectral attention, spatial/spectral Mamba branches, and adaptive expert depthwise convolution for robust hyperspectral image classification.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1109/TGRS.2025.3650350" target="_blank" rel="noreferrer">DOI</a>
+          <a href="https://github.com/dekai-li/HyPyraMamba" target="_blank" rel="noreferrer">Code</a>
         </div>
       </article>
 
       <article class="publication">
-        <img src="assets/thumbnails/gsmambanet.jpg" alt="GS-MambaNet architecture thumbnail" />
-        <div class="pub-content">
-          <div class="meta">2026 · IEEE JSTARS</div>
-          <h3>GS-MambaNet: A Decoupled Global-Spatial and Grouped-Spectral Mamba Network for Hyperspectral Image Classification</h3>
-          <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Jiaxin Li, Yonis Gulzar, Shahad Albannay, Ayoob Lone</p>
-          <p>Decoupled asynchronous spatial–spectral modeling with global-spatial attention and grouped-spectral Mamba.</p>
-          <div class="pub-actions"><a href="https://doi.org/10.1109/JSTARS.2026.3702378" target="_blank" rel="noreferrer">DOI</a></div>
+        <div class="pub-meta-row">
+          <span class="pub-year">2026</span>
+          <span class="pub-venue">Expert Systems With Applications · Journal Pre-proof</span>
+        </div>
+        <h3>FACANet: Fourier Aware Contrastive Alignment Network for Fine-Grained Mangrove Classification with Limited Samples</h3>
+        <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Jiaxin Li, Songpeng Gong</p>
+        <p class="pub-desc">HSI–LiDAR multimodal fusion with Fourier-domain modulation, adaptive cross-modal integration, and supervised modal contrastive alignment for fine-grained mangrove classification.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1016/j.eswa.2026.134187" target="_blank" rel="noreferrer">DOI</a>
+          <a href="https://github.com/dekai-li/FACANet" target="_blank" rel="noreferrer">Code</a>
         </div>
       </article>
 
       <article class="publication">
-        <img src="assets/thumbnails/hypyramamba.jpg" alt="HyPyraMamba architecture thumbnail" />
-        <div class="pub-content">
-          <div class="meta">2026 · IEEE TGRS</div>
-          <h3>HyPyraMamba: A Pyramid Spectral Attention and Mamba-Based Architecture for Robust Hyperspectral Image Classification</h3>
-          <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Mengxing Huang, Lorenzo Bruzzone, Jiaxin Li</p>
-          <p>Pyramid spectral attention, spatial/spectral Mamba branches, and adaptive expert depthwise convolution for robust HSI classification.</p>
-          <div class="pub-actions"><a href="https://doi.org/10.1109/TGRS.2025.3650350" target="_blank" rel="noreferrer">DOI</a><a href="https://github.com/dekai-li/HyPyraMamba" target="_blank" rel="noreferrer">Code</a></div>
+        <div class="pub-meta-row">
+          <span class="pub-year">2026</span>
+          <span class="pub-venue">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
+        </div>
+        <h3>GS-MambaNet: A Decoupled Global-Spatial and Grouped-Spectral Mamba Network for Hyperspectral Image Classification</h3>
+        <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Jiaxin Li, Yonis Gulzar, Shahad Albannay, Ayoob Lone</p>
+        <p class="pub-desc">Decoupled asynchronous spatial–spectral modeling with global-spatial attention and grouped-spectral Mamba.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1109/JSTARS.2026.3702378" target="_blank" rel="noreferrer">DOI</a>
         </div>
       </article>
 
       <article class="publication">
-        <img src="assets/thumbnails/hfmamba.jpg" alt="HFMamba architecture thumbnail" />
-        <div class="pub-content">
-          <div class="meta">2026 · IEEE Transactions on Consumer Electronics</div>
-          <h3>HFMamba: An Advanced Coastal Paradigm for Hyperspectral Image Analysis in Consumer-Driven Agricultural Remote Sensing</h3>
-          <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Mengxing Huang, Junfeng Zhang, Mohammad Shabaz, Leila Jamel, Shulei Wu</p>
-          <p>Coastal HSI analysis integrating spectral/spatial Mamba, multi-scale convolution, attention, and lightweight mixture-of-experts.</p>
-          <div class="pub-actions"><a href="https://doi.org/10.1109/TCE.2025.3645064" target="_blank" rel="noreferrer">DOI</a></div>
+        <div class="pub-meta-row">
+          <span class="pub-year">2026</span>
+          <span class="pub-venue">IEEE Transactions on Consumer Electronics</span>
+        </div>
+        <h3>HFMamba: An Advanced Coastal Paradigm for Hyperspectral Image Analysis in Consumer-Driven Agricultural Remote Sensing</h3>
+        <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Mengxing Huang, Junfeng Zhang, Mohammad Shabaz, Leila Jamel, Shulei Wu</p>
+        <p class="pub-desc">A coastal hyperspectral image analysis framework integrating Mamba-based modeling, multi-scale convolution, attention, and lightweight mixture-of-experts.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1109/TCE.2025.3645064" target="_blank" rel="noreferrer">DOI</a>
         </div>
       </article>
 
       <article class="publication">
-        <img src="assets/thumbnails/cstfnet.jpg" alt="CSTFNet architecture thumbnail" />
-        <div class="pub-content">
-          <div class="meta">2025 · IEEE JSTARS</div>
-          <h3>CSTFNet: A CNN and Dual Swin-Transformer Fusion Network for Remote Sensing Hyperspectral Data Fusion and Classification of Coastal Areas</h3>
-          <p class="authors"><strong>Dekai Li</strong>, Harold Neira-Molina, Mengxing Huang, Syam M.S., Yu Zhang, Zhang Junfeng, Uzair Aslam Bhatti, Muhammad Asif, Nadia Sarhan, Emad Mahrous Awwad</p>
-          <p>Hybrid CNN and dual Swin-Transformer modeling for local–global spectral–spatial representation in coastal HSI classification.</p>
-          <div class="pub-actions"><a href="https://doi.org/10.1109/JSTARS.2025.3530935" target="_blank" rel="noreferrer">DOI</a></div>
+        <div class="pub-meta-row">
+          <span class="pub-year">2025</span>
+          <span class="pub-venue">IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
+        </div>
+        <h3>CSTFNet: A CNN and Dual Swin-Transformer Fusion Network for Remote Sensing Hyperspectral Data Fusion and Classification of Coastal Areas</h3>
+        <p class="authors"><strong>Dekai Li</strong>, Harold Neira-Molina, Mengxing Huang, Syam M.S., Yu Zhang, Zhang Junfeng, Uzair Aslam Bhatti, Muhammad Asif, Nadia Sarhan, Emad Mahrous Awwad</p>
+        <p class="pub-desc">Hybrid CNN and dual Swin-Transformer modeling for local–global spectral–spatial representation in coastal hyperspectral classification.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1109/JSTARS.2025.3530935" target="_blank" rel="noreferrer">DOI</a>
         </div>
       </article>
 
       <article class="publication">
-        <img src="assets/thumbnails/dafnet.jpg" alt="DAFNet architecture thumbnail" />
-        <div class="pub-content">
-          <div class="meta">2025 · IEEE PRMVAI</div>
-          <h3>DAFNet: A Dual-Branch Attention Fusion Network with Multi-Scale Residual Learning for Hyperspectral Image Classification</h3>
-          <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Otabek Safarbaev, Jumabayev Ikhlosbek Umidjon ugli, Mughair Asalm Bhatti, Hao Tang</p>
-          <p>Dual-branch spectral–spatial learning with multi-scale residual blocks and adaptive attention fusion.</p>
-          <div class="pub-actions"><a href="https://doi.org/10.1109/PRMVAI65741.2025.11108624" target="_blank" rel="noreferrer">DOI</a></div>
+        <div class="pub-meta-row">
+          <span class="pub-year">2025</span>
+          <span class="pub-venue">IEEE International Conference on Pattern Recognition, Machine Vision and Artificial Intelligence (PRMVAI)</span>
+        </div>
+        <h3>DAFNet: A Dual-Branch Attention Fusion Network with Multi-Scale Residual Learning for Hyperspectral Image Classification</h3>
+        <p class="authors"><strong>Dekai Li</strong>, Uzair Aslam Bhatti, Otabek Safarbaev, Jumabayev Ikhlosbek Umidjon ugli, Mughair Asalm Bhatti, Hao Tang</p>
+        <p class="pub-desc">Dual-branch spectral–spatial learning with multi-scale residual blocks and adaptive attention fusion.</p>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.1109/PRMVAI65741.2025.11108624" target="_blank" rel="noreferrer">DOI</a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="patents" class="section">
-  <div class="container">
-    <div class="section-title"><span>05</span><h2>Patents</h2></div>
-    <div class="patent-grid">
-      <article>
-        <div class="status green">Granted · 2026</div>
-        <h3>基于改进多尺度注意力和 Transformer 网络的高光谱图像精确分类方法</h3>
-        <p><strong>Patent No.</strong> ZL 2024 1 1967702.7</p>
-        <p><strong>Publication No.</strong> CN 120047816 B</p>
-        <p><strong>Inventors:</strong> 尤佳, <strong>李德凯</strong>, 黄梦醒, 毋媛媛, 冯思玲, 张雨</p>
-        <p><strong>Granted:</strong> 23 Jun 2026</p>
-      </article>
-      <article>
-        <div class="status green">Granted · 2025</div>
-        <h3>基于 CNN 和 Dual-Swin-Transformer 融合网络的高光谱图像精确分类方法</h3>
-        <p><strong>Patent No.</strong> ZL 2024 1 1949888.3</p>
-        <p><strong>Publication No.</strong> CN 119888329 B</p>
-        <p><strong>Inventors:</strong> 尤佳, <strong>李德凯</strong>, 黄梦醒, 毋媛媛, 冯思玲, 张雨</p>
-        <p><strong>Granted:</strong> 25 Nov 2025</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="service" class="section soft">
+<section id="service" class="section">
   <div class="container narrow">
-    <div class="section-title"><span>06</span><h2>Academic Service</h2></div>
-    <p class="lead">Reviewer for journals including:</p>
-    <div class="chips">
-      <span>IEEE Transactions on Image Processing (TIP)</span>
-      <span>IEEE Transactions on Geoscience and Remote Sensing (TGRS)</span>
-      <span>International Journal of Applied Earth Observation and Geoinformation (JAG)</span>
-      <span>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)</span>
-      <span>Engineering Applications of Artificial Intelligence (EAAI)</span>
-      <span>Applied Soft Computing</span>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container narrow">
-    <div class="section-title"><span>07</span><h2>Recent Highlights</h2></div>
-    <div class="timeline">
-      <div><time>Aug 2026</time><p><strong>FACANet</strong> accepted by <em>Expert Systems With Applications</em>.</p></div>
-      <div><time>Jun 2026</time><p><strong>GS-MambaNet</strong> published in IEEE JSTARS.</p></div>
-      <div><time>Jun 2026</time><p>Invention patent on multiscale attention and Transformer-based hyperspectral classification granted.</p></div>
-      <div><time>Jan 2026</time><p><strong>HyPyraMamba</strong> published in IEEE TGRS.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section soft">
-  <div class="container narrow">
-    <div class="section-title"><span>08</span><h2>Contact</h2></div>
-    <div class="contact-card">
-      <a class="email" href="mailto:lidekai@hainanu.edu.cn">lidekai@hainanu.edu.cn</a>
-      <p>Department of Artificial Intelligence · Hainan University · Haikou, China</p>
-      <div class="contact-links">
-        <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=58hSyu0AAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
-        <a href="https://github.com/dekai-li" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://orcid.org/0000-0003-3126-9339" target="_blank" rel="noreferrer">ORCID</a>
-        <a href="assets/Dekai_Li_CV.pdf" target="_blank">CV</a>
-      </div>
-    </div>
+    <div class="section-title"><span>03</span><h2>Academic Service</h2></div>
+    <p class="lead">
+      Reviewer for <em>IEEE Transactions on Image Processing (TIP)</em>, <em>IEEE Transactions on Geoscience and Remote Sensing (TGRS)</em>,
+      <em>International Journal of Applied Earth Observation and Geoinformation (JAG)</em>, <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing (JSTARS)</em>,
+      <em>Engineering Applications of Artificial Intelligence (EAAI)</em>, and <em>Applied Soft Computing</em>.
+    </p>
   </div>
 </section>
 </main>
@@ -251,6 +171,7 @@
     <span>Academic homepage</span>
   </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
