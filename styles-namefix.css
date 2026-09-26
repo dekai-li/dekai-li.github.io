@@ -1,0 +1,303 @@
+
+:root{
+  --bg:#ffffff;
+  --soft:#f7f8fb;
+  --text:#111827;
+  --muted:#5f6b7a;
+  --line:#e4e7ec;
+  --blue:#1d4ed8;
+  --blue-soft:#eef4ff;
+  --gold:#8a5a00;
+  --gold-bg:#fff3cd;
+  --max:1020px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+  font-size:16px;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+.container{width:min(calc(100% - 40px),var(--max));margin:0 auto}
+.content-width{max-width:920px}
+
+/* Top navigation */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,255,255,.96);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
+}
+.nav-wrap{
+  height:62px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.brand{
+  font-size:1.12rem;
+  font-weight:850;
+  text-decoration:none;
+  letter-spacing:-.02em;
+}
+.nav{display:flex;gap:24px}
+.nav a{
+  text-decoration:none;
+  color:#344054;
+  font-size:.95rem;
+  font-weight:720;
+}
+.nav a:hover{color:var(--blue)}
+.nav-toggle{display:none;border:0;background:none;font-size:1.35rem}
+
+/* Hero: more compact, smaller portrait, larger readable text */
+.hero{
+  padding:26px 0 22px;
+  border-bottom:1px solid #eef1f5;
+  background:linear-gradient(180deg,#fafbfe 0%,#fff 100%);
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:112px 1fr;
+  gap:24px;
+  align-items:center;
+}
+.portrait{
+  width:112px;
+  height:140px;
+  object-fit:cover;
+  object-position:center 18%;
+  border-radius:16px;
+  border:1px solid #edf0f4;
+  box-shadow:0 6px 18px rgba(16,24,40,.06);
+}
+
+
+/* Name line: English and Chinese intentionally use the same visual size. */
+.name-row{
+  margin:0 0 11px;
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:18px;
+  line-height:1.05;
+  letter-spacing:0;
+}
+.name-row .name-en,
+.name-row .name-cn{
+  display:inline-block;
+  font-size:clamp(2.35rem, 3.7vw, 2.8rem) !important;
+  line-height:1.05;
+  font-weight:800;
+}
+.name-row .name-en{
+  color:#111827;
+  letter-spacing:-.035em;
+}
+.name-row .name-cn{
+  color:#344054;
+  letter-spacing:.08em;
+  margin:0 !important;
+  white-space:nowrap;
+}
+
+.affiliation{
+  margin:0 0 5px;
+  font-size:1.05rem;
+  font-weight:760;
+  color:#344054;
+}
+.email{margin:0 0 14px;font-size:1rem}
+.email a{
+  color:var(--blue);
+  font-weight:760;
+  text-decoration:none;
+}
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.button{
+  padding:8px 12px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#fff;
+  text-decoration:none;
+  font-weight:760;
+  font-size:.92rem;
+}
+.button.primary{
+  background:#111827;
+  color:#fff;
+  border-color:#111827;
+}
+
+/* Sections */
+.section{padding:32px 0}
+.soft{background:var(--soft)}
+h2{
+  margin:0 0 14px;
+  font-size:1.7rem;
+  line-height:1.2;
+  letter-spacing:-.03em;
+}
+.section p{
+  margin-top:0;
+  font-size:1.02rem;
+  color:#344054;
+}
+.section-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:4px;
+}
+.section-head a{
+  font-size:.94rem;
+  font-weight:760;
+  color:var(--blue);
+  text-decoration:none;
+}
+
+/* Publications */
+.pub-list{list-style:none;margin:0;padding:0}
+.pub-item{
+  padding:17px 0;
+  border-bottom:1px solid var(--line);
+}
+.pub-item:last-child{border-bottom:0}
+.pub-item.highlighted{
+  margin:7px 0 9px;
+  padding:17px 18px;
+  border:1px solid #e9d391;
+  border-radius:12px;
+  background:#fffdf6;
+}
+.pub-topline{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  align-items:center;
+  margin-bottom:6px;
+}
+.year,.venue,.badge{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:3px 9px;
+  font-size:.78rem;
+  font-weight:850;
+}
+.year{background:var(--blue-soft);color:var(--blue)}
+.venue{background:#fff;color:#475467;border:1px solid #e9edf2}
+.badge{background:var(--gold-bg);color:var(--gold)}
+.pub-item h3{
+  margin:0 0 6px;
+  font-size:1.08rem;
+  line-height:1.48;
+  letter-spacing:-.01em;
+}
+.authors{
+  margin:0 0 5px!important;
+  color:#475467!important;
+  font-size:.95rem!important;
+}
+.links{
+  margin:0!important;
+  display:flex;
+  gap:13px;
+}
+.links a{
+  color:var(--blue);
+  font-weight:760;
+  text-decoration:none;
+  font-size:.9rem;
+}
+
+/* Patents */
+.patent-list{display:grid;gap:12px}
+.patent-list article{
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+}
+.patent-list article:last-child{border-bottom:0}
+.patent-year{
+  margin:0 0 4px!important;
+  font-size:.84rem!important;
+  font-weight:800;
+  color:var(--blue)!important;
+}
+.patent-list h3{
+  margin:0 0 6px;
+  font-size:1.08rem;
+  line-height:1.45;
+}
+.patent-list p{
+  margin:2px 0;
+  color:#475467;
+  font-size:.95rem;
+}
+
+/* Academic service */
+#service p{
+  font-size:1.02rem;
+  line-height:1.75;
+}
+
+/* Footer */
+footer{
+  border-top:1px solid var(--line);
+  padding:18px 0;
+  color:#667085;
+  font-size:.86rem;
+}
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+@media(max-width:720px){
+  .nav-toggle{display:block}
+  .nav{
+    display:none;
+    position:absolute;
+    left:16px;right:16px;top:56px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:10px;
+    box-shadow:0 10px 24px rgba(16,24,40,.09);
+    flex-direction:column;
+    gap:0;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:8px;font-size:.96rem}
+  .hero-grid{grid-template-columns:92px 1fr;gap:18px}
+  .portrait{width:92px;height:116px}
+  
+  .section{padding:24px 0}
+  h2{font-size:1.55rem}
+  .pub-item h3{font-size:1.04rem}
+}
+
+@media(max-width:720px){
+  .name-row{gap:14px}
+  .name-row .name-en,
+  .name-row .name-cn{font-size:2.15rem !important}
+}
+@media(max-width:520px){
+  .name-row{gap:10px}
+  .name-row .name-en,
+  .name-row .name-cn{font-size:1.95rem !important}
+}
