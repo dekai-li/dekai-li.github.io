@@ -321,3 +321,11 @@ footer{
 }
 .doi-line a:hover{text-decoration:underline}
 .sep{color:#98a2b3;margin:0 6px}
+
+.repo-url{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+.hero .content-width{
+  max-width:900px;
+}
