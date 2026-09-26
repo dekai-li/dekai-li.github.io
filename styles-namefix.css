@@ -82,35 +82,36 @@ a{color:inherit}
 
 /* Name line: English and Chinese intentionally use the same visual size. */
 .name-row{
-  margin:0 0 11px;
+  margin:0 0 8px;
   display:flex;
   align-items:baseline;
   flex-wrap:wrap;
-  gap:18px;
-  line-height:1.05;
+  gap:10px;
+  line-height:1.35;
   letter-spacing:0;
 }
 .name-row .name-en,
 .name-row .name-cn{
   display:inline-block;
-  font-size:clamp(2.35rem, 3.7vw, 2.8rem) !important;
-  line-height:1.05;
+  font-size:1.05rem !important;
+  line-height:1.35;
   font-weight:800;
 }
 .name-row .name-en{
   color:#111827;
-  letter-spacing:-.035em;
+  letter-spacing:0;
 }
 .name-row .name-cn{
-  color:#344054;
-  letter-spacing:.08em;
+  color:#111827;
+  letter-spacing:.04em;
   margin:0 !important;
   white-space:nowrap;
 }
 
 .affiliation{
-  margin:0 0 5px;
+  margin:0 0 8px;
   font-size:1.05rem;
+  line-height:1.35;
   font-weight:760;
   color:#344054;
 }
@@ -292,12 +293,12 @@ footer{
 }
 
 @media(max-width:720px){
-  .name-row{gap:14px}
+  .name-row{gap:8px}
   .name-row .name-en,
-  .name-row .name-cn{font-size:2.15rem !important}
+  .name-row .name-cn{font-size:1.05rem !important}
 }
 @media(max-width:520px){
-  .name-row{gap:10px}
+  .name-row{gap:7px}
   .name-row .name-en,
-  .name-row .name-cn{font-size:1.95rem !important}
+  .name-row .name-cn{font-size:1.05rem !important}
 }
