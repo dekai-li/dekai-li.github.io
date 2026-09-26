@@ -79,22 +79,16 @@ a{color:inherit}
   box-shadow:0 6px 18px rgba(16,24,40,.06);
 }
 h1{
-  margin:0 0 10px;
-  display:flex;
-  align-items:baseline;
-  flex-wrap:wrap;
-  gap:16px;
-  font-size:clamp(2.15rem,3.6vw,2.8rem);
-  line-height:1.05;
-  letter-spacing:-.035em;
+  margin:0 0 9px;
+  font-size:clamp(2.45rem,4.4vw,3.35rem);
+  line-height:1.02;
+  letter-spacing:-.05em;
 }
 h1 span{
-  font-size:1em;
+  font-size:.42em;
   color:#475467;
-  margin:0;
+  margin-left:8px;
   white-space:nowrap;
-  letter-spacing:.08em;
-  font-weight:800;
 }
 .affiliation{
   margin:0 0 5px;
@@ -273,7 +267,7 @@ footer{
   .nav a{padding:8px;font-size:.96rem}
   .hero-grid{grid-template-columns:92px 1fr;gap:18px}
   .portrait{width:92px;height:116px}
-  h1{font-size:2.2rem;gap:12px}
+  h1{font-size:2.5rem}
   .section-head{display:block}
   .section-head a{display:inline-block;margin-bottom:7px}
 }
@@ -282,8 +276,8 @@ footer{
   .hero{padding:20px 0 18px}
   .hero-grid{grid-template-columns:1fr;gap:12px}
   .portrait{width:96px;height:120px}
-  h1{font-size:2.05rem;gap:10px}
-  h1 span{font-size:1em;letter-spacing:.08em}
+  h1{font-size:2.4rem}
+  h1 span{display:block;margin:7px 0 0;font-size:.38em}
   .section{padding:24px 0}
   h2{font-size:1.55rem}
   .pub-item h3{font-size:1.04rem}
