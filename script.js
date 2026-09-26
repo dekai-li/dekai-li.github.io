@@ -1,5 +1,4 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-const toggle=document.querySelector('.nav-toggle');
-const nav=document.querySelector('.nav');
-toggle?.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
-document.querySelectorAll('.nav a').forEach(link=>{link.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false');});});
+document.getElementById('year').textContent=new Date().getFullYear();
+const t=document.querySelector('.nav-toggle'),n=document.querySelector('.nav');
+t?.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});
+document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');t?.setAttribute('aria-expanded','false');}));
