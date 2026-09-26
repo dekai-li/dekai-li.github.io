@@ -507,3 +507,13 @@ h2{
     font-size:.87rem;
   }
 }
+
+
+/* V1.2: keep Academic Service aligned with the main content column */
+.service-text{
+  max-width:820px;
+  margin:0;
+  color:var(--body);
+  font-size:1rem;
+  line-height:1.76;
+}
